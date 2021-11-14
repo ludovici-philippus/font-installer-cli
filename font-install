@@ -1,9 +1,10 @@
 #!/bin/bash
-[ -z "$1" ] && echo "Please set the font's path!" && exit;
+[ -z "$1" ] && echo "Please set the font path!" && exit;
 FILE=$1;
 FONTS="${HOME}/.local/share/fonts";
 
 mkdir -p $FONTS && mv -i $FILE $FONTS;
-echo "Font Successfully Installed!";
+echo "The Font has been installed sucessfully!";
+
 
 
